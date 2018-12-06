@@ -23,6 +23,7 @@ if (!empty($id)) {
 }
 
 $cates = $this->Common->arrayKeyValue(Api::call(Configure::read('API.url_cates_all'), array()), 'id', 'name');
+$homePosition = Configure::read('Config.homePosition');
 
 // Create breadcrumb
 $listPageUrl = h($this->BASE_URL . '/cates');
@@ -53,13 +54,18 @@ $this->UpdateForm->reset()
     ))
     ->addElement(array(
         'id' => 'root_id',
-        'label' => __('LABEL_CATE'),
+        'label' => __('Danh mục cha'),
         'options' => $cates,
         'empty' => '-'
     ))
     ->addElement(array(
         'id' => 'order',
         'label' => __('LABEL_ORDER_DISPLAY'),
+    ))
+    ->addElement(array(
+        'id' => 'home_position',
+        'label' => __('Hiển thị ở trang chủ'),
+        'options' => $homePosition
     ))
     ->addElement(array(
         'type' => 'submit',

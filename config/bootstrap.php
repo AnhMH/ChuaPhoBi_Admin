@@ -246,6 +246,10 @@ Configure::write('Config.searchStatus', array(
     0 => __('LABEL_ACTIVE'),
     1 => __('LABEL_INACTIVE'),
 ));
+Configure::write('Config.homePosition', array(
+    0 => __('Không hiển thị'),
+    1 => __('Vị trí 1'),
+));
 
 if ($env == 'production') {
     define('VERSION_DATE', date('Ymd'));
