@@ -68,26 +68,27 @@ $this->UpdateForm->reset()
         'type' => 'file'
     ))
     ->addElement(array(
-        'id' => 'description',
-        'label' => __('LABEL_DESCRIPTION'),
-        'empty' => ''
-    ))
-    ->addElement(array(
         'id' => 'keyword',
         'label' => __('LABEL_KEYWORD'),
         'empty' => ''
+    ))
+    ->addElement(array(
+        'id' => 'description',
+        'label' => __('LABEL_DESCRIPTION'),
+        'empty' => '',
+        'type' => 'editor'
     ))
     ->addElement(array(
         'id' => 'content',
         'label' => __('LABEL_CONTENT'),
         'type' => 'editor'
     ))
-    ->addElement(array(
-        'id' => 'type',
-        'label' => __('LABEL_TYPE'),
-        'options' => $types,
-        'empty' => '0'
-    ))
+//    ->addElement(array(
+//        'id' => 'type',
+//        'label' => __('LABEL_TYPE'),
+//        'options' => $types,
+//        'empty' => '0'
+//    ))
     ->addElement(array(
         'type' => 'submit',
         'value' => __('LABEL_SAVE'),

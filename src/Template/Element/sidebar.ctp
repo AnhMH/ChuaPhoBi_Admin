@@ -33,20 +33,6 @@
                 </a>
             </li>
             
-            <li class="<?php if (in_array($controller, array('customers'))) echo ' active ' ?>">
-                <a href="<?php echo $BASE_URL;?>/customers">
-                    <i class="fa fa-user"></i>
-                    <span><?php echo __('LABEL_CUSTOMER_MANAGEMENT'); ?></span>
-                </a>
-            </li>
-            
-            <li class="<?php if (in_array($controller, array('suppliers'))) echo ' active ' ?>">
-                <a href="<?php echo $BASE_URL;?>/suppliers">
-                    <i class="fa fa-user-secret"></i>
-                    <span><?php echo __('LABEL_SUPPLIERS_MANAGEMENT'); ?></span>
-                </a>
-            </li>
-            
             <li class="treeview <?php if (in_array($controller, array('admins'))) echo ' active ' ?>">
                 <a href="#">
                     <i class="fa fa-cogs"></i> 
