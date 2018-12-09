@@ -24,6 +24,7 @@ if (!empty($id)) {
 
 $cates = $this->Common->arrayKeyValue(Api::call(Configure::read('API.url_cates_all'), array()), 'id', 'name');
 $homePosition = Configure::read('Config.homePosition');
+$languageType = Configure::read('Config.languageType');
 
 // Create breadcrumb
 $listPageUrl = h($this->BASE_URL . '/cates');
@@ -66,6 +67,11 @@ $this->UpdateForm->reset()
         'id' => 'home_position',
         'label' => __('Hiển thị ở trang chủ'),
         'options' => $homePosition
+    ))
+    ->addElement(array(
+        'id' => 'language_type',
+        'label' => __('Ngôn ngữ'),
+        'options' => $languageType
     ))
     ->addElement(array(
         'type' => 'submit',

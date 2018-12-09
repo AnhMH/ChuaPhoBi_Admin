@@ -28,6 +28,8 @@ $types = array(
     1 => 'Hình ảnh',
     2 => 'Video'
 );
+$languageType = Configure::read('Config.languageType');
+
 // Create breadcrumb
 $listPageUrl = h($this->BASE_URL . '/posts');
 $this->Breadcrumb->setTitle($pageTitle)
@@ -83,12 +85,11 @@ $this->UpdateForm->reset()
         'label' => __('LABEL_CONTENT'),
         'type' => 'editor'
     ))
-//    ->addElement(array(
-//        'id' => 'type',
-//        'label' => __('LABEL_TYPE'),
-//        'options' => $types,
-//        'empty' => '0'
-//    ))
+    ->addElement(array(
+        'id' => 'language_type',
+        'label' => __('Ngôn ngữ'),
+        'options' => $languageType
+    ))
     ->addElement(array(
         'type' => 'submit',
         'value' => __('LABEL_SAVE'),

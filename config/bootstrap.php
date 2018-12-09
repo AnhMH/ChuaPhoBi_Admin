@@ -252,6 +252,10 @@ Configure::write('Config.homePosition', array(
     2 => __('Vị trí 2'),
     3 => __('Vị trí 3'),
 ));
+Configure::write('Config.languageType', array(
+    1 => __('Tiếng Việt'),
+    2 => __('中文'),
+));
 
 if ($env == 'production') {
     define('VERSION_DATE', date('Ymd'));

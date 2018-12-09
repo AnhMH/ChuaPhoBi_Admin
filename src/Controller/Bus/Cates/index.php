@@ -5,6 +5,8 @@ use Cake\Core\Configure;
 $this->doGeneralAction();
 $pageSize = Configure::read('Config.PageSize');
 
+$languageType = Configure::read('Config.languageType');
+
 // Create breadcrumb
 $pageTitle = __('LABEL_CATE_LIST');
 $this->Breadcrumb->setTitle($pageTitle)
@@ -24,6 +26,11 @@ $this->SearchForm
             'label' => __('LABEL_NAME')
         ))
         ->addElement(array(
+            'id' => 'language_type',
+            'label' => __('Ngôn ngữ'),
+            'options' => $languageType
+        ))
+        ->addElement(array(
             'id' => 'limit',
             'label' => __('LABEL_LIMIT'),
             'options' => Configure::read('Config.searchPageSize'),
@@ -41,12 +48,14 @@ $this->SearchForm
         ));
 
 $param = $this->getParams(array(
-    'limit' => $pageSize
+    'limit' => $pageSize,
+    'language_type' => 1
 ));
 
 $result = Api::call(Configure::read('API.url_cates_list'), $param);
 $total = !empty($result['total']) ? $result['total'] : 0;
 $data = !empty($result['data']) ? $result['data'] : array();
+$homePosition = Configure::read('Config.homePosition');
 
 // Show data
 $this->SimpleTable
@@ -69,6 +78,12 @@ $this->SimpleTable
             'id' => 'order',
             'title' => __('LABEL_ORDER_DISPLAY'),
             'empty' => '-'
+        ))
+        ->addColumn(array(
+            'id' => 'home_position',
+            'title' => __('Hiển thị ở trang chủ'),
+            'empty' => 'Không hiển thị',
+            'rules' => $homePosition
         ))
         ->addColumn(array(
             'id' => 'created',

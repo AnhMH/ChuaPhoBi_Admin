@@ -13,7 +13,15 @@ $this->Breadcrumb->setTitle($pageTitle)
         ));
 
 // Create search form
-$cates = $this->Common->arrayKeyValue(Api::call(Configure::read('API.url_cates_all'), array()), 'id', 'name');
+$languageType = Configure::read('Config.languageType');
+$param = $this->getParams(array(
+    'limit' => $pageSize,
+    'disable' => 0,
+    'language_type' => 1
+));
+$cates = $this->Common->arrayKeyValue(Api::call(Configure::read('API.url_cates_all'), array(
+    'language_type' => $param['language_type']
+    )), 'id', 'name');
 $dataSearch = array(
     'limit' => $pageSize
 );
@@ -25,10 +33,15 @@ $this->SearchForm
             'label' => __('LABEL_NAME')
         ))
         ->addElement(array(
-            'id' => 'limit',
-            'label' => __('LABEL_LIMIT'),
+            'id' => 'cate_id',
+            'label' => __('Danh mục'),
             'options' => $cates,
             'empty' => '-'
+        ))
+        ->addElement(array(
+            'id' => 'language_type',
+            'label' => __('Ngôn ngữ'),
+            'options' => $languageType
         ))
         ->addElement(array(
             'id' => 'limit',
@@ -46,11 +59,6 @@ $this->SearchForm
             'value' => __('LABEL_SEARCH'),
             'class' => 'btn btn-primary',
         ));
-
-$param = $this->getParams(array(
-    'limit' => $pageSize,
-    'disable' => 0
-));
 
 $result = Api::call(Configure::read('API.url_posts_list'), $param);
 $total = !empty($result['total']) ? $result['total'] : 0;
