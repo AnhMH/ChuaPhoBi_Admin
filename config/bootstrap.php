@@ -249,6 +249,8 @@ Configure::write('Config.searchStatus', array(
 Configure::write('Config.homePosition', array(
     0 => __('Không hiển thị'),
     1 => __('Vị trí 1'),
+    2 => __('Vị trí 2'),
+    3 => __('Vị trí 3'),
 ));
 
 if ($env == 'production') {
