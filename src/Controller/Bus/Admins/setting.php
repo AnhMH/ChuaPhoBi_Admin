@@ -23,7 +23,7 @@ $data['language_type'] = $languageType;
 // Create Update form 
 $form = new UpdateCommonForm();
 $this->UpdateForm->reset()
-//    ->setModel($form)
+    ->setModel($form)
     ->setData($data)
     ->setAttribute('autocomplete', 'off')
     ->addElement(array(
@@ -66,13 +66,17 @@ $this->UpdateForm->reset()
         'id' => 'twitter',
         'label' => __('LABEL_TWITTER'),
     ))
-    ->addElement(array(
-        'id' => 'instagram',
-        'label' => __('LABEL_INSTAGRAM'),
-    ))
+//    ->addElement(array(
+//        'id' => 'instagram',
+//        'label' => __('LABEL_INSTAGRAM'),
+//    ))
     ->addElement(array(
         'id' => 'google_plus',
         'label' => __('LABEL_GOOGLE_PLUS'),
+    ))
+    ->addElement(array(
+        'id' => 'youtube',
+        'label' => __('Youtube'),
     ))
     ->addElement(array(
         'id' => 'welcome_text',
