@@ -312,3 +312,30 @@ msgstr "Từ khóa"
 
 msgid "LABEL_TYPE"
 msgstr "Thể loại"
+
+msgid "LABEL_WEB_SETTING"
+msgstr "Cài đặt website"
+
+msgid "LABEL_WEB_NAME"
+msgstr "Tiêu đề website"
+
+msgid "LABEL_LANGUAGE_TYPE"
+msgstr "Ngôn ngữ"
+
+msgid "LABEL_LOGO"
+msgstr "Logo"
+
+msgid "LABEL_TWITTER"
+msgstr "Twitter"
+
+msgid "LABEL_INSTAGRAM"
+msgstr "Instagram"
+
+msgid "LABEL_GOOGLE_PLUS"
+msgstr "G+"
+
+msgid "LABEL_WELCOME_TEXT"
+msgstr "Text chào mừng ở trang chủ"
+
+msgid "LABEL_FOOTER_TEXT"
+msgstr "Nội dung footer"

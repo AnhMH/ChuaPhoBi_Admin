@@ -43,6 +43,11 @@ $(document).ready(function ($) {
 
     // Order
     init_order();
+    
+    $('#container_admins_setting #language_type').on('change', function(){
+        var $val = $(this).val();
+        location.href = baseUrl + '/' + controller + '/' + action + '/' + $val;
+    });
 });
 
 /**

@@ -42,6 +42,11 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
+                    <li class="<?php if ($controller == 'admins' && in_array($action, array('setting'))) echo ' active ' ?>">
+                        <a href="<?php echo $BASE_URL; ?>/admins/setting">
+                            <i class="fa fa-circle-o"></i> <?php echo __('LABEL_WEB_SETTING');?>
+                        </a>
+                    </li>
                     <li class="<?php if ($controller == 'admins' && in_array($action, array('updateprofile'))) echo ' active ' ?>">
                         <a href="<?php echo $BASE_URL; ?>/admins/updateprofile">
                             <i class="fa fa-circle-o"></i> <?php echo __('LABEL_UPDATE_PROFILE');?>

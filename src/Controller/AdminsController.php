@@ -15,4 +15,11 @@ class AdminsController extends AppController {
     public function updateprofile() {
         include ('Bus/Admins/updateprofile.php');
     }
+    
+    /**
+     * Admins page
+     */
+    public function setting($languageType = 1) {
+        include ('Bus/Admins/setting.php');
+    }
 }
