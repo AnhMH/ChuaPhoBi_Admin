@@ -345,3 +345,15 @@ msgstr "Quản lý liên hệ"
 
 msgid "LABEL_CONTACT_LIST"
 msgstr "Danh sách liên hệ"
+
+msgid "LABEL_NOTICE_MANAGEMENT"
+msgstr "Quản lý thông báo"
+
+msgid "LABEL_NOTICE_LIST"
+msgstr "Danh sách thông báo"
+
+msgid "LABEL_NOTICE_UPDATE"
+msgstr "Cập nhật thông báo"
+
+msgid "LABEL_TITLE"
+msgstr "Tiêu đề"

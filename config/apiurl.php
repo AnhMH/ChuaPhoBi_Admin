@@ -22,10 +22,10 @@ Configure::write('API.url_suppliers_detail', 'suppliers/detail');
 Configure::write('API.url_suppliers_addupdate', 'suppliers/addupdate');
 Configure::write('API.url_suppliers_all', 'suppliers/all');
 
-Configure::write('API.url_posts_list', 'posts/list');
-Configure::write('API.url_posts_detail', 'posts/detail');
-Configure::write('API.url_posts_addupdate', 'posts/addupdate');
-Configure::write('API.url_posts_all', 'posts/all');
+Configure::write('API.url_notices_list', 'notices/list');
+Configure::write('API.url_notices_detail', 'notices/detail');
+Configure::write('API.url_notices_addupdate', 'notices/addupdate');
+Configure::write('API.url_notices_all', 'notices/all');
 
 Configure::write('API.url_cates_list', 'cates/list');
 Configure::write('API.url_cates_detail', 'cates/detail');
@@ -42,3 +42,8 @@ Configure::write('API.url_settings_detail', 'settings/detail');
 Configure::write('API.url_settings_addupdate', 'settings/addupdate');
 
 Configure::write('API.url_contacts_list', 'contacts/list');
+
+Configure::write('API.url_posts_list', 'posts/list');
+Configure::write('API.url_posts_detail', 'posts/detail');
+Configure::write('API.url_posts_addupdate', 'posts/addupdate');
+Configure::write('API.url_posts_all', 'posts/all');

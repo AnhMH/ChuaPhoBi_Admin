@@ -26,6 +26,13 @@
                 </a>
             </li>
             
+            <li class="<?php if (in_array($controller, array('notices'))) echo ' active ' ?>">
+                <a href="<?php echo $BASE_URL; ?>/notices">
+                    <i class="fa fa-flag"></i>
+                    <span><?php echo __('LABEL_NOTICE_MANAGEMENT'); ?></span>
+                </a>
+            </li>
+            
             <li class="<?php if (in_array($controller, array('cates'))) echo ' active ' ?>">
                 <a href="<?php echo $BASE_URL;?>/cates">
                     <i class="fa fa-book"></i>
