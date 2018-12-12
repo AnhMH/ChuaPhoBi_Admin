@@ -339,3 +339,9 @@ msgstr "Text chào mừng ở trang chủ"
 
 msgid "LABEL_FOOTER_TEXT"
 msgstr "Nội dung footer"
+
+msgid "LABEL_CONTACT_MANAGEMENT"
+msgstr "Quản lý liên hệ"
+
+msgid "LABEL_CONTACT_LIST"
+msgstr "Danh sách liên hệ"

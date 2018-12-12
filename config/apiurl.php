@@ -40,3 +40,5 @@ Configure::write('API.url_reports_general', 'reports/general');
 
 Configure::write('API.url_settings_detail', 'settings/detail');
 Configure::write('API.url_settings_addupdate', 'settings/addupdate');
+
+Configure::write('API.url_contacts_list', 'contacts/list');

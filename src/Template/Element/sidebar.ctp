@@ -21,15 +21,22 @@
             
             <li class="<?php if (in_array($controller, array('posts'))) echo ' active ' ?>">
                 <a href="<?php echo $BASE_URL; ?>/posts">
-                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-newspaper-o"></i>
                     <span><?php echo __('LABEL_POST_MANAGEMENT'); ?></span>
                 </a>
             </li>
             
             <li class="<?php if (in_array($controller, array('cates'))) echo ' active ' ?>">
                 <a href="<?php echo $BASE_URL;?>/cates">
-                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-book"></i>
                     <span><?php echo __('LABEL_CATE_MANAGEMENT'); ?></span>
+                </a>
+            </li>
+            
+            <li class="<?php if (in_array($controller, array('contacts'))) echo ' active ' ?>">
+                <a href="<?php echo $BASE_URL;?>/contacts">
+                    <i class="fa fa-user"></i>
+                    <span><?php echo __('LABEL_CONTACT_MANAGEMENT'); ?></span>
                 </a>
             </li>
             
