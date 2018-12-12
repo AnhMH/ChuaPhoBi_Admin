@@ -25,28 +25,9 @@ $this->UpdateForm->reset()
         'label' => __('id'),
     ))
     ->addElement(array(
-        'id' => 'account',
-        'label' => __('LABEL_ACCOUNT'),
-//        'required' => true,
-        'readonly' => true
-    ))
-    ->addElement(array(
         'id' => 'name',
         'label' => __('LABEL_NAME'),
-//        'required' => true,
-        'readonly' => true
-    ))
-    ->addElement(array(
-        'id' => 'email',
-        'label' => __('LABEL_EMAIL'),
-    ))
-    ->addElement(array(
-        'id' => 'tel',
-        'label' => __('LABEL_TEL'),
-    ))
-    ->addElement(array(
-        'id' => 'address',
-        'label' => __('LABEL_ADDRESS'),
+        'required' => true,
     ))
     ->addElement(array(
         'id' => 'avatar',
@@ -55,12 +36,9 @@ $this->UpdateForm->reset()
         'type' => 'file'
     ))
     ->addElement(array(
-        'id' => 'website',
-        'label' => __('LABEL_WEBSITE'),
-    ))
-    ->addElement(array(
-        'id' => 'facebook',
-        'label' => __('LABEL_FACEBOOK'),
+        'id' => 'new_pass',
+        'label' => __('Mật khẩu mới'),
+        'type' => 'password'
     ))
     ->addElement(array(
         'type' => 'submit',
