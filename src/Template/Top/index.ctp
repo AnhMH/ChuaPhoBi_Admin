@@ -4,14 +4,14 @@
         <!-- small box -->
         <div class="small-box bg-aqua">
             <div class="inner">
-                <h3><?php echo !empty($data['order_count']) ? $data['order_count'] : 0;?></h3>
+                <h3><?php echo !empty($data['post_count']) ? $data['post_count'] : 0;?></h3>
 
-                <p><?php echo __('LABEL_ORDER');?></p>
+                <p><?php echo __('Bài viết');?></p>
             </div>
             <div class="icon">
-                <i class="ion ion-bag"></i>
+                <i class="ion ion-document-text"></i>
             </div>
-            <a href="<?php echo $BASE_URL;?>/orders" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?php echo $BASE_URL;?>/articles" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -19,14 +19,14 @@
         <!-- small box -->
         <div class="small-box bg-red">
             <div class="inner">
-                <h3><?php echo !empty($data['product_count']) ? $data['product_count'] : 0;?></h3>
+                <h3><?php echo !empty($data['notice_count']) ? $data['notice_count'] : 0;?></h3>
 
-                <p><?php echo __('LABEL_PRODUCT');?></p>
+                <p><?php echo __('Thông báo');?></p>
             </div>
             <div class="icon">
-                <i class="ion-cube"></i>
+                <i class="ion ion-flag"></i>
             </div>
-            <a href="<?php echo $BASE_URL;?>/products" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?php echo $BASE_URL;?>/notices" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -34,14 +34,14 @@
         <!-- small box -->
         <div class="small-box bg-yellow">
             <div class="inner">
-                <h3><?php echo !empty($data['supplier_count']) ? $data['supplier_count'] : 0;?></h3>
+                <h3><?php echo !empty($data['cate_count']) ? $data['cate_count'] : 0;?></h3>
 
-                <p><?php echo __('LABEL_SUPPLIER');?></p>
+                <p><?php echo __('Danh mục');?></p>
             </div>
             <div class="icon">
-                <i class="ion ion-android-contacts"></i>
+                <i class="ion ion-ios-browsers"></i>
             </div>
-            <a href="<?php echo $BASE_URL;?>/suppliers" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?php echo $BASE_URL;?>/cates" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -49,14 +49,14 @@
         <!-- small box -->
         <div class="small-box bg-green">
             <div class="inner">
-                <h3><?php echo !empty($data['customer_count']) ? $data['customer_count'] : 0;?></h3>
+                <h3><?php echo !empty($data['contact_count']) ? $data['contact_count'] : 0;?></h3>
 
-                <p><?php echo __('LABEL_CUSTOMER');?></p>
+                <p><?php echo __('Liên hệ');?></p>
             </div>
             <div class="icon">
                 <i class="ion-android-people"></i>
             </div>
-            <a href="<?php echo $BASE_URL;?>/customers" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?php echo $BASE_URL;?>/contacts" class="small-box-footer"><?php echo __('LABEL_MORE_INFO');?> <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
