@@ -59,6 +59,24 @@ $this->UpdateForm->reset()
         'type' => 'file'
     ))
     ->addElement(array(
+        'id' => 'bg_header',
+        'label' => __('Hình nền header'),
+        'image' => true,
+        'type' => 'file'
+    ))
+    ->addElement(array(
+        'id' => 'bg_body',
+        'label' => __('Hình nền body'),
+        'image' => true,
+        'type' => 'file'
+    ))
+    ->addElement(array(
+        'id' => 'bg_notice',
+        'label' => __('Hình nền thông báo'),
+        'image' => true,
+        'type' => 'file'
+    ))
+    ->addElement(array(
         'id' => 'facebook',
         'label' => __('LABEL_FACEBOOK'),
     ))
@@ -115,6 +133,24 @@ if ($this->request->is('post')) {
             $filename = $data['logo']['name'];
             $filedata = $data['logo']['tmp_name'];
             $data['logo'] = new CurlFile($filedata, $filetype, $filename);
+        }
+        if (!empty($data['bg_header']['name'])) {
+            $filetype = $data['bg_header']['type'];
+            $filename = $data['bg_header']['name'];
+            $filedata = $data['bg_header']['tmp_name'];
+            $data['bg_header'] = new CurlFile($filedata, $filetype, $filename);
+        }
+        if (!empty($data['bg_body']['name'])) {
+            $filetype = $data['bg_body']['type'];
+            $filename = $data['bg_body']['name'];
+            $filedata = $data['bg_body']['tmp_name'];
+            $data['bg_body'] = new CurlFile($filedata, $filetype, $filename);
+        }
+        if (!empty($data['bg_notice']['name'])) {
+            $filetype = $data['bg_notice']['type'];
+            $filename = $data['bg_notice']['name'];
+            $filedata = $data['bg_notice']['tmp_name'];
+            $data['bg_notice'] = new CurlFile($filedata, $filetype, $filename);
         }
         // Call API to Login
         $admin = array();
