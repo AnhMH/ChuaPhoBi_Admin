@@ -47,6 +47,13 @@
                 </a>
             </li>
             
+            <li class="<?php if (in_array($controller, array('weblinks'))) echo ' active ' ?>">
+                <a href="<?php echo $BASE_URL;?>/weblinks">
+                    <i class="fa fa-users"></i>
+                    <span><?php echo __('LABEL_WEBLINK_MANAGEMENT'); ?></span>
+                </a>
+            </li>
+            
             <li class="treeview <?php if (in_array($controller, array('admins'))) echo ' active ' ?>">
                 <a href="#">
                     <i class="fa fa-cogs"></i> 

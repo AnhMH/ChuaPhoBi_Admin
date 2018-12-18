@@ -357,3 +357,12 @@ msgstr "Cập nhật thông báo"
 
 msgid "LABEL_TITLE"
 msgstr "Tiêu đề"
+
+msgid "LABEL_WEBLINK_MANAGEMENT"
+msgstr "Website liên kết"
+
+msgid "LABEL_WEBLINK_LIST"
+msgstr "Danh sách website liên kết"
+
+msgid "LABEL_WEBLINK_UPDATE"
+msgstr "Cập nhật website liên kết"

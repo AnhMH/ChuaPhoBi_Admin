@@ -43,6 +43,11 @@ Configure::write('API.url_settings_addupdate', 'settings/addupdate');
 
 Configure::write('API.url_contacts_list', 'contacts/list');
 
+Configure::write('API.url_weblinks_list', 'weblinks/list');
+Configure::write('API.url_weblinks_detail', 'weblinks/detail');
+Configure::write('API.url_weblinks_addupdate', 'weblinks/addupdate');
+Configure::write('API.url_weblinks_all', 'weblinks/all');
+
 Configure::write('API.url_posts_list', 'posts/list');
 Configure::write('API.url_posts_detail', 'posts/detail');
 Configure::write('API.url_posts_addupdate', 'posts/addupdate');
